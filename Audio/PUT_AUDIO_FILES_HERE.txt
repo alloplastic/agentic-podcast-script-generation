@@ -1,0 +1,7 @@
+I considered automating audio generation with an MCP server + Claude Cowork, but decided it might be easier/cleaner to use a standalone service for that.  Thus, this folder is here just as a convenience, in case you want to keep audio files in the same project folder as the script.  The script-generation tools do not depend on it.
+
+For an external audio-generation tool, you can check out ElevenLabs, Wondercraft.ai, or similar services.
+
+I had luck vibe-coding a simple interface on Google AI Studio, using little programming knowledge except my understanding that I needed to swap in the "pro" TTS API, and obtain my own API key for that.
+
+See the top-level README.md file for more details on the above.

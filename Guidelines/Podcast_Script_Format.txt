@@ -1,0 +1,14 @@
+<format_explanation>
+  Google Gemini text-to-speech requires each line of dialogue to begin with the speaker's name, then a colon, then a space, and finally the dialogue, unquoted.
+</format_explanation>
+
+<format>
+Speaker: Dialogue.
+</format>
+
+<example>
+Biff: Flying cars. In my lifetime. I can't believe it.
+Betty: That's right, Biff. That's what Strategic Farsight is predicting for this week's Friday Farsight. By 2046, give or take a few years, most urban travel will happen via aircar.
+Biff: That just blows my mind. I mean, I mean, that would totally change what cities look like. The "built world," as they call it.
+Betty: No doubt. The streets and highways and vast parking lots -- all that pavement -- well, it won't disappear overnight, but, gradually, you know, it will be re-absorbed into non-industrial uses.
+</example>
