@@ -51,13 +51,16 @@ For the task of synthesizing the script's audio, I vibecoded a basic, clunky app
 
 Or, easier but more expensive, sign up for a platform like ElevenLabs or Wondercraft.ai, and edit /Guidelines/Podcast_Script_Format.txt to match the import format of your chosen platform.
 
+Expect minor synthesis errors, regardless of the platform you use. You'll likely also need a sound editor like [Audacity](https://www.audacityteam.org/) for assembling the full podcast and fixing glitches.
+
 Notes on my vibe-coded audio generator app:
 
-  * The above link gives you access to the code, but you need to provide your own Google text-to-speech API key to make use of it (otherwise, I would get billed for your audio); see the Google AI Studio docs, or favorite LLM, for instructions on how to do that
-  * To use the app, which appears in "Preview" in AI Studio, you may need to refresh and accept the browser's request to access the clipboard
-  * My workflow: Copy 30-40 lines of the script at a time (from the output in the /Drafts folder), click the "Import from Clipboard" button (script will then appear in UI), select voices for the hosts, click the "Generate Audio" button, wait a while, then use the newly visible buttons to play and/or download the audio file
+  * The above link gives you access to the code, but you need to provide your own Google text-to-speech API key to make use of it (otherwise, I would get billed for your audio); see the Google AI Studio docs, or favorite LLM, for instructions on how to do that.
+  * To use the app, which appears in "Preview" in AI Studio, you may need to refresh and accept the browser's request to access the clipboard.
+  * My workflow: Copy 30-40 lines of the script at a time (from the output in the /Drafts folder), click the "Import from Clipboard" button (script will then appear in UI), select voices for the hosts, click the "Generate Audio" button, wait a while, then use the newly visible buttons to play and/or download the audio file.
   * Disclaimer: I've tested no other workflows but this, not even the "generate script" feature, which the LLM created on its own initiative. There are no niceties like editing the script live or copy-pasting, and I haven't looked closely at the error handling. So, use at your own risk.
   * That 30-40 line rule is because the text-to-speech model tends to get overloaded with more dialogue than that, meaning that it starts to make more errors. Depending on how verbose your hosts are, the exact line limit may vary.
+  * You'll want the sets of lines to overlap a bit. In other words, include the last line of the previous set in the subsequest set being synthesized. This gives the text-to-speech model some context for properly inflecting the back-and-forth dialogue. 
   
 ### Digression
 
