@@ -1,7 +1,7 @@
 # Agentic Podcast Script Generation
 A multi-stage AI writing process, implemented as LLM prompts for Claude Cowork but adaptable to other environments as well.
 
-Based on the process used to create the futurist podcast [Friday Farsight](https://sheldonpacotti.com/friday-farsight).
+Based on the process used to create the futurism podcast [Friday Farsight](https://sheldonpacotti.com/friday-farsight).
 
 # Instructions
 
@@ -13,7 +13,7 @@ Sounds simple, but if you checked out the repository with a "git clone" command,
 
 ## Customize the Prompts
 
-The prompts are ready to go except for two sections that need to be revised
+The prompts are ready to go except for two sections that need to be revised.
 
 ### Prompt: Initial Draft
 
@@ -51,9 +51,9 @@ For the task of synthesizing the script's audio, I vibecoded a basic, clunky app
 
 Or, easier but more expensive, sign up for a platform like ElevenLabs or Wondercraft.ai, and edit /Guidelines/Podcast_Script_Format.txt to match the import format of your chosen platform.
 
-Expect minor synthesis errors, regardless of the platform you use. You'll likely also need a sound editor like [Audacity](https://www.audacityteam.org/) for assembling the full podcast and fixing glitches.
+Expect minor synthesis errors, regardless of the platform you use. To fix these glitches, and to assemble the full podcast, you'll likely also need a sound editor like [Audacity](https://www.audacityteam.org/).
 
-Notes on my vibe-coded audio generator app:
+Notes on my vibecoded audio generator app:
 
   * The above link gives you access to the code, but you need to provide your own Google text-to-speech API key to make use of it (otherwise, I would get billed for your audio); see the Google AI Studio docs, or favorite LLM, for instructions on how to do that.
   * To use the app, which appears in "Preview" in AI Studio, you may need to refresh and accept the browser's request to access the clipboard.
@@ -64,6 +64,6 @@ Notes on my vibe-coded audio generator app:
   
 ### Digression
 
-I've also considered replacing the audio-gen UI with a prompt. This would rely on Claude Cowork using an MCP server to connect to ElevenLabs or another API to synthesize individual lines and then stitch them together, using a specific local file format that would let us do retakes and re-cut the final show via editing text files and prompting Claude. An intriguing possibility, prefiguring the death of application software, but I seem to be getting a decent workflow out of my vibe-coded app.
+I've also considered replacing the audio-gen UI with a prompt. This would rely on Claude Cowork using an MCP server to connect to ElevenLabs or another API to synthesize individual lines and then stitch them together, using a specific local file format that would let us do retakes and re-cut the final show via editing text files and prompting Claude. An intriguing possibility, prefiguring the death of application software, but I seem to be getting a decent workflow out of my vibecoded app.
 
 And, actually, these text-to-speech models are now accepting sets of lines together, which are used to generate a seamless back-and-forth with good emotional flow. Would probably be very hard to decouple into a file-by-file system on a local hard drive.
